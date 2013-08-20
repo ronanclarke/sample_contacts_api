@@ -11,6 +11,29 @@ class ContactsController < ApplicationController
   end
 
 
+  api :GET, 'contacts', "Return all contacts"
+  example 'curl http://hidden-oasis-1864.herokuapp.com/contacts'
+  api :GET, 'contacts?q=param', "Return all contacts with a name, email or phone that contains 'param'"
+  example 'curl http://hidden-oasis-1864.herokuapp.com/contacts?q=974'
+  example 'Example Response
+[
+  {
+    "created_at": "2013-08-20T20:58:41Z",
+    "email": "arianna_labadie@schmeler.net",
+    "id": 8,
+    "name": "Nicklaus Jerde",
+    "phone": "759-786-0974 x13952",
+    "updated_at": "2013-08-20T20:58:41Z"
+  },
+  {
+    "created_at": "2013-08-20T20:58:49Z",
+    "email": "bud.boyle@schuster.com",
+    "id": 871,
+    "name": "Burnice Goyette",
+    "phone": "974-926-5643",
+    "updated_at": "2013-08-20T20:58:49Z"
+  }
+]'
 
   def index
 
@@ -19,7 +42,7 @@ class ContactsController < ApplicationController
       @contacts = Contact.all
     else
       q = "%#{params[:q]}%"
-      @contacts = Contact.where("name like ? or email like ? or phone like ? ",q,q,q)
+      @contacts = Contact.where("name like ? or email like ? or phone like ? ", q, q, q)
     end
 
 
@@ -29,67 +52,95 @@ class ContactsController < ApplicationController
     end
   end
 
-  # GET /contacts/1
-  # GET /contacts/1.json
+  api :GET, 'contacts/{:id}', "Return a single contact"
+  example 'curl http://hidden-oasis-1864.herokuapp.com/contacts/8'
+
+  example 'Example Response
+
+  {
+    "created_at": "2013-08-20T20:58:41Z",
+    "email": "arianna_labadie@schmeler.net",
+    "id": 8,
+    "name": "Nicklaus Jerde",
+    "phone": "759-786-0974 x13952",
+    "updated_at": "2013-08-20T20:58:41Z"
+  },
+'
+
   def show
-    @contact = Contact.find(params[:id])
+    @appointment = Appointment.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @contact }
-    end
+
+    render json: @appointment
+  []
   end
 
-  # GET /contacts/new
-  # GET /contacts/new.json
-  def new
-    @contact = Contact.new
+  api :POST, 'contacts', 'Create a Contact'
+  param :name, String, :required => true, :desc => 'Contact Name'
+  param :phone, String, :desc => 'Either phone or email must be present'
+  param :email, String, :desc => 'Either phone or email must be present'
+  example 'curl -d "name=test&phone=123@email=test@test.com" http://hidden-oasis-1864.herokuapp.com/contacts'
+  example 'Example Response
+{
+  "created_at": "2013-08-20T22:36:39Z",
+  "email": null,
+  "id": 1011,
+  "name": "test",
+  "phone": "123@email=test@test.com",
+  "updated_at": "2013-08-20T22:36:39Z"
+}'
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @contact }
-    end
-  end
 
-  # GET /contacts/1/edit
-  def edit
-    @contact = Contact.find(params[:id])
-  end
-
-  # POST /contacts
-  # POST /contacts.json
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(
+        :name => params[:name],
+        :email => params[:email],
+        :phone => params[:phone]
+    )
 
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render json: @contact, status: :created, location: @contact }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
+    if @contact.save
+      render json: @contact, status: :created, location: @contact
+    else
+      render json: @contact.errors, status: :unprocessable_entity
     end
+
   end
 
-  # PUT /contacts/1
-  # PUT /contacts/1.json
+  api :PUT, 'contacts/{:id}', 'Update a Contact'
+  param :name, String, :required => true, :desc => 'Contact Name'
+  param :phone, String, :desc => 'Either phone or email must be present'
+  param :email, String, :desc => 'Either phone or email must be present'
+  example 'curl -X PUT -d "name=updatedname&phone=123&email=test@test.com" http://hidden-oasis-1864.herokuapp.com/contacts/2'
+  example 'Example Response
+{
+  "created_at": "2013-08-20T20:23:36Z",
+  "email": "test@test.com",
+  "id": 2,
+  "name": "updatedname",
+  "phone": "123",
+  "updated_at": "2013-08-20T22:50:13Z"
+}'
+
   def update
     @contact = Contact.find(params[:id])
 
-    respond_to do |format|
-      if @contact.update_attributes(params[:contact])
-        format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
+    @contact.name = params[:name] if params[:name]
+    @contact.email = params[:email] if params[:email]
+    @contact.phone = params[:phone] if params[:phone]
+
+
+    if @contact.save
+
+      render json: @contact
+    else
+
+      render json: @contact.errors, status: :unprocessable_entity
     end
+
   end
 
-  # DELETE /contacts/1
-  # DELETE /contacts/1.json
+# DELETE /contacts/1
+# DELETE /contacts/1.json
   def destroy
     @contact = Contact.find(params[:id])
     @contact.destroy
@@ -99,4 +150,5 @@ class ContactsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

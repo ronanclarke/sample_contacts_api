@@ -1,10 +1,12 @@
 AppointmentDemo::Application.routes.draw do
+  apipie
+
   resources :contacts
 
 
   resources :appointments
 
-
+  get "/" => redirect('/api-docs')
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

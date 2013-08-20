@@ -4,18 +4,20 @@
     <list default="true" id="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" name="Default" comment="" />
     <ignored path="appointment_demo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376949859069" ignored="false" />
+    <file path="/Dummy.txt" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377036738656" ignored="false" />
     <file path="$PROJECT_DIR$/../backboneboilerplate/js/models/appointments.js" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376950455411" ignored="false" />
     <file path="/appointments.js" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376950455058" ignored="false" />
     <file path="$PROJECT_DIR$/../backboneboilerplate/js/main.js" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376950491917" ignored="false" />
     <file path="/schema.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376950649891" ignored="false" />
-    <file path="/appointments_controller.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376951854677" ignored="false" />
-    <file path="$PROJECT_DIR$/config/routes.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1376951805545" ignored="false" />
+    <file path="/appointments_controller.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377040892603" ignored="false" />
     <file path="/application.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377027199576" ignored="false" />
     <file path="/contact.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377031918325" ignored="false" />
-    <file path="/Gemfile" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377029503675" ignored="false" />
-    <file path="/contacts_controller.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377030698857" ignored="false" />
-    <file path="/appointment.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377032001420" ignored="false" />
+    <file path="/Gemfile" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377036625051" ignored="false" />
+    <file path="/contacts_controller.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377040838805" ignored="false" />
+    <file path="/appointment.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377039473464" ignored="false" />
+    <file path="/apipie.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377036791352" ignored="false" />
+    <file path="$USER_HOME$/src/crs_rails/app/controllers/api/v1/api_controller.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377038287512" ignored="false" />
+    <file path="/routes.rb" changelist="52012d48-48f3-4717-b2c7-d3fa5e1af4e5" time="1377041169813" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appointment.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="appointment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/appointment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08163265">
+            <state line="1" column="60" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,7 +58,7 @@
       <file leaf-file-name="contacts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+            <state line="101" column="47" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,7 +67,16 @@
       <file leaf-file-name="appointments_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/appointments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="102" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="55" column="42" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-3.6727273">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="5" selection-start="110" selection-end="110" vertical-scroll-proportion="0.16853933">
               <folding />
             </state>
           </provider>
@@ -74,7 +85,25 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="17" column="17" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apipie.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/apipie.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="45" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rake" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/railties-3.2.14/lib/rails/tasks/routes.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,12 +121,14 @@
       <list>
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130819215121_create_appointments.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/appointments_controller.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/initializers/apipie.rb" />
         <option value="$PROJECT_DIR$/app/models/appointment.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/appointments_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -162,6 +193,20 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="public">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointment_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="db">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -181,6 +226,86 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="migrate">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointment_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="layouts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointment_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="contacts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointment_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointments">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="appointment_demo">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -281,7 +406,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backboneboilerplate" />
+    <property name="last_opened_file_path" value="$USER_HOME$/src/crs_rails" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -613,23 +738,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/apipie-rails-0.0.22/lib/apipie-rails.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/railties-3.2.14/lib/rails/tasks/routes.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/apipie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="45" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/appointments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="102" selection-end="218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+        <state line="17" column="17" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -643,7 +775,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/appointment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08163265">
+        <state line="1" column="60" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="47" selection-start="2534" selection-end="2534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/gems/journey-1.0.4/lib/journey/route.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.127809">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/appointments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="42" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-3.6727273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="110" selection-end="110" vertical-scroll-proportion="0.16853933">
           <folding />
         </state>
       </provider>
