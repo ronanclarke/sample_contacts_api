@@ -13,6 +13,8 @@ group :production do
   gem 'pg'
 end
 
+gem 'rack-cors', :require => 'rack/cors'
+gem 'faker'
 
 # Gems used only for assets and not required
 # in production environments by default.

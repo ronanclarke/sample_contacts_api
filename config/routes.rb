@@ -1,4 +1,7 @@
 AppointmentDemo::Application.routes.draw do
+  resources :contacts
+
+
   resources :appointments
 
 
