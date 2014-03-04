@@ -6,6 +6,8 @@ AppointmentDemo::Application.routes.draw do
 
   resources :appointments
 
+  get "/check-phone-number/:country_id/:phone_number" => 'phone#check'
+
   get "/" => redirect('/api-docs')
   # The priority is based upon order of creation:
   # first created -> highest priority.

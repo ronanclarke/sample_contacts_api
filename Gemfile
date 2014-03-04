@@ -16,6 +16,7 @@ end
 gem 'rack-cors', :require => 'rack/cors'
 gem 'faker'
 gem 'apipie-rails'
+gem 'phonelib'
 
 # Gems used only for assets and not required
 # in production environments by default.
