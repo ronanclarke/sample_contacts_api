@@ -9,7 +9,7 @@ class Contact < ActiveRecord::Base
 
   def self.generate_test_data
 
-    1000.times do
+    100.times do
 
       Contact.create!({
                           :name => Faker::Name.name,

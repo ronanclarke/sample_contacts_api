@@ -3,7 +3,7 @@ class AppointmentsController < ApplicationController
   # GET /appointments.json
 
   before_filter :set_default_response_format
-
+  skip_before_filter :verify_authenticity_token
 
   def set_default_response_format
     request.format = :json
