@@ -23,6 +23,7 @@ class ContactsController < ApplicationController
     "id": 8,
     "name": "Nicklaus Jerde",
     "phone": "759-786-0974 x13952",
+    "phone_country_code": "IE"
     "updated_at": "2013-08-20T20:58:41Z"
   },
   {
@@ -31,6 +32,7 @@ class ContactsController < ApplicationController
     "id": 871,
     "name": "Burnice Goyette",
     "phone": "974-926-5643",
+    "phone_country_code": "IE"
     "updated_at": "2013-08-20T20:58:49Z"
   }
 ]'
@@ -63,6 +65,7 @@ class ContactsController < ApplicationController
     "id": 8,
     "name": "Nicklaus Jerde",
     "phone": "759-786-0974 x13952",
+    "phone_country_code": "IE"
     "updated_at": "2013-08-20T20:58:41Z"
   },
 '
@@ -78,6 +81,7 @@ class ContactsController < ApplicationController
   api :POST, 'contacts', 'Create a Contact'
   param :name, String, :required => true, :desc => 'Contact Name'
   param :phone, String, :desc => 'Either phone or email must be present'
+  param :phone_country_code, String, :desc => 'ISO country code'
   param :email, String, :desc => 'Either phone or email must be present'
   example 'curl -d "name=test&phone=123@email=test@test.com" http://hidden-oasis-1864.herokuapp.com/contacts'
   example 'Example Response
@@ -86,7 +90,8 @@ class ContactsController < ApplicationController
   "email": null,
   "id": 1011,
   "name": "test",
-  "phone": "123@email=test@test.com",
+  "phone": "0989080809809",
+  "phone_country_code": "IE"
   "updated_at": "2013-08-20T22:36:39Z"
 }'
 
@@ -95,7 +100,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(
         :name => params[:name],
         :email => params[:email],
-        :phone => params[:phone]
+        :phone => params[:phone],
+        :phone_country_code => params[:phone_country_code]
     )
 
     if @contact.save
@@ -118,6 +124,7 @@ class ContactsController < ApplicationController
   "id": 2,
   "name": "updatedname",
   "phone": "123",
+  "phone_country_code": "IE"
   "updated_at": "2013-08-20T22:50:13Z"
 }'
 
@@ -127,6 +134,7 @@ class ContactsController < ApplicationController
     @contact.name = params[:name] if params[:name]
     @contact.email = params[:email] if params[:email]
     @contact.phone = params[:phone] if params[:phone]
+    @contact.phone_country_code = params[:phone_country_code] if params[:phone_country_code]
 
 
     if @contact.save

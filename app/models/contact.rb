@@ -1,5 +1,5 @@
 class Contact < ActiveRecord::Base
-  attr_accessible :email, :name, :phone
+  attr_accessible :email, :name, :phone ,:phone_country_code
 
   validates_presence_of :name
   validates_presence_of :email, :if => "phone.blank?", :message => "Phone or Email must be supplied"
