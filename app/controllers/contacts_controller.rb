@@ -71,10 +71,10 @@ class ContactsController < ApplicationController
 '
 
   def show
-    @appointment = Appointment.find(params[:id])
+    @contact = Contact.find(params[:id])
 
 
-    render json: @appointment
+    render json: @contact
   []
   end
 
